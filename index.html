@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㄅㄆㄇ學習樂園 - 隱私權政策與支援中心</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FFFDF7;
+            --card-bg: #FFFFFF;
+            --text-main: #332924;
+            --text-muted: #6B5E57;
+            --accent-amber: #F59E0B;
+            --accent-amber-bg: #FEF3C7;
+            --accent-emerald: #10B981;
+            --accent-emerald-bg: #D1FAE5;
+            --accent-sky: #0284C7;
+            --accent-sky-bg: #E0F2FE;
+            --border-color: #E7E0D8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.75;
+            padding: 24px 16px 64px;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            background: var(--card-bg);
+            border: 2px solid #FDE68A;
+            border-radius: 24px;
+            padding: 32px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 16px rgba(245, 158, 11, 0.08);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-amber-bg);
+            color: #B45309;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        .nav-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-pills a {
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 8px 18px;
+            border-radius: 999px;
+            transition: opacity 0.2s;
+        }
+
+        .nav-pills a:hover {
+            opacity: 0.85;
+        }
+
+        .pill-privacy {
+            background: var(--accent-emerald-bg);
+            color: #065F46;
+        }
+
+        .pill-support {
+            background: var(--accent-sky-bg);
+            color: #075985;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 28px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding-bottom: 14px;
+            margin-bottom: 18px;
+            border-bottom: 2px solid #F5F0EA;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .date-tag {
+            font-size: 13px;
+            color: var(--text-muted);
+            background: #F5F0EA;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-weight: 500;
+        }
+
+        .highlight-box {
+            border-radius: 16px;
+            padding: 16px 18px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .highlight-emerald {
+            background: #ECFDF5;
+            border: 1px solid #A7F3D0;
+            color: #065F46;
+        }
+
+        .highlight-sky {
+            background: #F0F9FF;
+            border: 1px solid #BAE6FD;
+            color: #075985;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 700;
+            margin: 20px 0 8px;
+            color: var(--text-main);
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 14px;
+        }
+
+        li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        code {
+            background: #F3EFEA;
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #9A3412;
+        }
+
+        .faq-item {
+            background: #FAF8F5;
+            border: 1px solid #EDE7DF;
+            border-radius: 16px;
+            padding: 16px 18px;
+            margin-bottom: 12px;
+        }
+
+        .faq-q {
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            font-size: 15px;
+        }
+
+        .faq-a {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .contact-card {
+            background: #FFFBEB;
+            border: 1px solid #FDE68A;
+            border-radius: 16px;
+            padding: 18px;
+            margin-top: 16px;
+        }
+
+        .contact-card a {
+            color: #B45309;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #9C8E86;
+            font-size: 13px;
+            margin-top: 32px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 24px; }
+            h2 { font-size: 20px; }
+            section { padding: 22px 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="badge">官方資訊與支援頁面</div>
+            <h1>ㄅㄆㄇ學習樂園</h1>
+            <p class="subtitle">專為學齡前兒童與注音初學者設計的互動式注音學習應用程式</p>
+            <nav class="nav-pills">
+                <a href="#privacy" class="pill-privacy">🔒 隱私權政策</a>
+                <a href="#support" class="pill-support">💬 支援與常見問題</a>
+            </nav>
+        </header>
+
+        <!-- 隱私權政策區塊 -->
+        <section id="privacy">
+            <div class="section-header">
+                <h2>隱私權政策（Privacy Policy）</h2>
+                <span class="date-tag">最後更新日期：2026 年 11 月 24 日</span>
+            </div>
+
+            <div class="highlight-box highlight-emerald">
+                《ㄅㄆㄇ學習樂園》（以下稱「本應用程式」）非常重視兒童、家長與所有使用者的數位隱私與資料安全。本應用程式依循兒童網路隱私保護原則，並符合 App Store 兒童類別與家庭友善規範。
+            </div>
+
+            <h3>1. 我們蒐集哪些資料？</h3>
+            <ul>
+                <li><strong>零個人資料蒐集：</strong>本應用程式<strong>不會</strong>要求註冊帳號，也<strong>不會</strong>主動蒐集、儲存或傳輸使用者的姓名、電子郵件、電話號碼、精確位置、照片、相機或麥克風錄音等個人識別資料。</li>
+                <li><strong>無第三方廣告與行為追蹤：</strong>本應用程式<strong>不包含</strong>第三方廣告 SDK、跨 App 追蹤機制或外部行為分析追蹤器。</li>
+            </ul>
+
+            <h3>2. 學習進度如何儲存？</h3>
+            <ul>
+                <li>您的星星分數、已點亮注音符號紀錄與「弱點特訓」練習狀態，僅儲存在您的裝置本機端（例如 <code>localStorage</code>），<strong>不會上傳至外部伺服器</strong>。</li>
+                <li>若您清除應用程式資料或解除安裝本應用程式，本機儲存的學習紀錄將會一併移除。</li>
+            </ul>
+
+            <h3>3. 家長控制與安全設計</h3>
+            <ul>
+                <li>涉及家長資訊或相關設定入口時，設有家長驗證機制（家長鎖），協助降低兒童誤觸風險。</li>
+                <li>若家長對本隱私權政策有任何疑問，或希望查詢、反映任何隱私相關事項，歡迎透過下方「支援與聯絡資訊」與我們聯繫。</li>
+            </ul>
+
+            <h3>4. 政策修訂</h3>
+            <ul>
+                <li>未來若因功能調整或法規要求更新本隱私權政策，將於本網頁更新生效日期與內容，不另行個別發送廣告通知。</li>
+            </ul>
+        </section>
+
+        <!-- 支援與常見問題區塊 -->
+        <section id="support">
+            <div class="section-header">
+                <h2>支援與常見問題（Support）</h2>
+                <span class="date-tag">家長與使用者服務中心</span>
+            </div>
+
+            <div class="highlight-box highlight-sky">
+                歡迎使用《ㄅㄆㄇ學習樂園》！本應用程式提供注音符號發音、筆順練習、聽音辨字與拼音組裝等互動學習功能，陪伴孩子輕鬆學會 37 個注音符號。
+            </div>
+
+            <h3>常見問題（FAQ）</h3>
+
+            <div class="faq-item">
+                <div class="faq-q">Q1：沒有網路可以使用嗎？</div>
+                <p class="faq-a">可以。核心學習與練習內容可在裝置本機運作，方便外出或搭車時使用。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q2：聽不到語音發音怎麼辦？</div>
+                <p class="faq-a">請確認裝置已開啟音量且未處於靜音模式，並檢查系統設定中是否已安裝或啟用繁體中文（台灣 / <code>zh-TW</code>）語音合成功能。不同裝置的語音音色與發音表現可能略有差異。</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-q">Q3：如何重設學習進度？</div>
+                <p class="faq-a">可於遊戲內的圖鑑或進度管理處執行重置，或透過解除安裝本應用程式清除本機紀錄。</p>
+            </div>
+
+            <h3>聯絡我們</h3>
+            <div class="contact-card">
+                <p><strong>開發者／團隊：</strong>Summer Corp.（<code>com.summercorp.bopomofo</code>）</p>
+                <p><strong>客服信箱：</strong><a href="mailto:summer.tsai@summer-corp.com">summer.tsai@summer-corp.com</a></p>
+                <p style="margin-bottom: 0; font-size: 13px;">若遇到閃退、畫面顯示異常或音訊問題，來信時請附上您的<strong>裝置型號</strong>、<strong>iOS 版本</strong>與<strong>操作步驟</strong>，以便我們更快為您排查。</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Summer Corp. All Rights Reserved. ㄅㄆㄇ學習樂園
+        </footer>
+    </div>
+</body>
+</html>
